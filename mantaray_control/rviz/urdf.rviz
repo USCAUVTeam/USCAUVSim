@@ -1,0 +1,597 @@
+Panels:
+  - Class: rviz/Displays
+    Help Height: 70
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /PointCloud21
+        - /PointCloud21/Status1
+        - /Range1
+      Splitter Ratio: 0.5
+    Tree Height: 345
+  - Class: rviz/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+Preferences:
+  PromptSaveOnExit: true
+Toolbars:
+  toolButtonStyle: 2
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.029999999329447746
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 10
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Alpha: 0.800000011920929
+      Class: rviz/RobotModel
+      Collision Enabled: false
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        camera_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        camera_link_optical:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        mantaray/base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        mantaray/chassis:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        mantaray/dvl_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        mantaray/dvl_sonar0_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        mantaray/dvl_sonar1_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        mantaray/dvl_sonar2_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        mantaray/dvl_sonar3_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        mantaray/imu_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        mantaray/pose_sensor_link_default:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        mantaray/thruster_0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        mantaray/thruster_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        mantaray/thruster_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        mantaray/thruster_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        mantaray/thruster_4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        mantaray/thruster_5:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        mantaray/thruster_6:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        mantaray/thruster_7:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        mantaray/zed_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        mantaray/zed_camera_center:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        mantaray/zed_left_camera_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        mantaray/zed_left_camera_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        mantaray/zed_right_camera_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        mantaray/zed_right_camera_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+      Name: RobotModel
+      Robot Description: mantaray/robot_description
+      TF Prefix: ""
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
+    - Class: rviz/TF
+      Enabled: true
+      Filter (blacklist): ""
+      Filter (whitelist): ""
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+        camera_link:
+          Value: true
+        camera_link_optical:
+          Value: true
+        mantaray/base_footprint:
+          Value: true
+        mantaray/base_link:
+          Value: true
+        mantaray/base_link_ned:
+          Value: true
+        mantaray/base_stabilized:
+          Value: true
+        mantaray/chassis:
+          Value: true
+        mantaray/dvl_link:
+          Value: true
+        mantaray/dvl_sonar0_link:
+          Value: true
+        mantaray/dvl_sonar1_link:
+          Value: true
+        mantaray/dvl_sonar2_link:
+          Value: true
+        mantaray/dvl_sonar3_link:
+          Value: true
+        mantaray/imu_link:
+          Value: true
+        mantaray/pose_sensor_link_default:
+          Value: true
+        mantaray/thruster_0:
+          Value: true
+        mantaray/thruster_1:
+          Value: true
+        mantaray/thruster_2:
+          Value: true
+        mantaray/thruster_3:
+          Value: true
+        mantaray/thruster_4:
+          Value: true
+        mantaray/thruster_5:
+          Value: true
+        mantaray/thruster_6:
+          Value: true
+        mantaray/thruster_7:
+          Value: true
+        mantaray/zed_base_link:
+          Value: true
+        mantaray/zed_camera_center:
+          Value: true
+        mantaray/zed_left_camera_frame:
+          Value: true
+        mantaray/zed_left_camera_optical_frame:
+          Value: true
+        mantaray/zed_right_camera_frame:
+          Value: true
+        mantaray/zed_right_camera_optical_frame:
+          Value: true
+        world:
+          Value: true
+        world_ned:
+          Value: true
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        world:
+          mantaray/base_footprint:
+            mantaray/base_stabilized:
+              mantaray/base_link:
+                camera_link:
+                  camera_link_optical:
+                    {}
+                mantaray/base_link_ned:
+                  {}
+                mantaray/chassis:
+                  {}
+                mantaray/dvl_link:
+                  mantaray/dvl_sonar0_link:
+                    {}
+                  mantaray/dvl_sonar1_link:
+                    {}
+                  mantaray/dvl_sonar2_link:
+                    {}
+                  mantaray/dvl_sonar3_link:
+                    {}
+                mantaray/imu_link:
+                  {}
+                mantaray/pose_sensor_link_default:
+                  {}
+                mantaray/thruster_0:
+                  {}
+                mantaray/thruster_1:
+                  {}
+                mantaray/thruster_2:
+                  {}
+                mantaray/thruster_3:
+                  {}
+                mantaray/thruster_4:
+                  {}
+                mantaray/thruster_5:
+                  {}
+                mantaray/thruster_6:
+                  {}
+                mantaray/thruster_7:
+                  {}
+                mantaray/zed_base_link:
+                  mantaray/zed_camera_center:
+                    mantaray/zed_left_camera_frame:
+                      mantaray/zed_left_camera_optical_frame:
+                        {}
+                    mantaray/zed_right_camera_frame:
+                      mantaray/zed_right_camera_optical_frame:
+                        {}
+          world_ned:
+            {}
+      Update Interval: 0
+      Value: true
+    - Alpha: 1
+      Arrow Width: 0.5
+      Class: rviz/WrenchStamped
+      Enabled: true
+      Force Arrow Scale: 2
+      Force Color: 204; 51; 51
+      Hide Small Values: true
+      History Length: 1
+      Name: WrenchStamped
+      Topic: /mantaray/thrusters/0/thrust_wrench
+      Torque Arrow Scale: 2
+      Torque Color: 204; 204; 51
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Arrow Width: 0.5
+      Class: rviz/WrenchStamped
+      Enabled: true
+      Force Arrow Scale: 2
+      Force Color: 204; 51; 51
+      Hide Small Values: true
+      History Length: 1
+      Name: WrenchStamped
+      Topic: /mantaray/thrusters/1/thrust_wrench
+      Torque Arrow Scale: 2
+      Torque Color: 204; 204; 51
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Arrow Width: 0.5
+      Class: rviz/WrenchStamped
+      Enabled: true
+      Force Arrow Scale: 2
+      Force Color: 204; 51; 51
+      Hide Small Values: true
+      History Length: 1
+      Name: WrenchStamped
+      Topic: /mantaray/thrusters/2/thrust_wrench
+      Torque Arrow Scale: 2
+      Torque Color: 204; 204; 51
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Arrow Width: 0.5
+      Class: rviz/WrenchStamped
+      Enabled: true
+      Force Arrow Scale: 2
+      Force Color: 204; 51; 51
+      Hide Small Values: true
+      History Length: 1
+      Name: WrenchStamped
+      Topic: /mantaray/thrusters/3/thrust_wrench
+      Torque Arrow Scale: 2
+      Torque Color: 204; 204; 51
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Arrow Width: 0.5
+      Class: rviz/WrenchStamped
+      Enabled: true
+      Force Arrow Scale: 2
+      Force Color: 204; 51; 51
+      Hide Small Values: true
+      History Length: 1
+      Name: WrenchStamped
+      Topic: /mantaray/thrusters/4/thrust_wrench
+      Torque Arrow Scale: 2
+      Torque Color: 204; 204; 51
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Arrow Width: 0.5
+      Class: rviz/WrenchStamped
+      Enabled: true
+      Force Arrow Scale: 2
+      Force Color: 204; 51; 51
+      Hide Small Values: true
+      History Length: 1
+      Name: WrenchStamped
+      Topic: /mantaray/thrusters/5/thrust_wrench
+      Torque Arrow Scale: 2
+      Torque Color: 204; 204; 51
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Arrow Width: 0.5
+      Class: rviz/WrenchStamped
+      Enabled: true
+      Force Arrow Scale: 2
+      Force Color: 204; 51; 51
+      Hide Small Values: true
+      History Length: 1
+      Name: WrenchStamped
+      Topic: /mantaray/thrusters/6/thrust_wrench
+      Torque Arrow Scale: 2
+      Torque Color: 204; 204; 51
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Arrow Width: 0.5
+      Class: rviz/WrenchStamped
+      Enabled: true
+      Force Arrow Scale: 2
+      Force Color: 204; 51; 51
+      Hide Small Values: true
+      History Length: 1
+      Name: WrenchStamped
+      Topic: /mantaray/thrusters/7/thrust_wrench
+      Torque Arrow Scale: 2
+      Torque Color: 204; 204; 51
+      Unreliable: false
+      Value: true
+    - Class: rviz/Image
+      Enabled: true
+      Image Topic: /mantaray/bottom_camera
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: Image
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 255; 255; 255
+      Color Transformer: RGB8
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Min Color: 0; 0; 0
+      Name: PointCloud2
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.009999999776482582
+      Style: Flat Squares
+      Topic: /mantaray/mantaray/left_camera/zed_point_cloud
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Alpha: 0.5
+      Buffer Length: 1
+      Class: rviz/Range
+      Color: 255; 255; 255
+      Enabled: true
+      Name: Range
+      Queue Size: 100
+      Topic: /mantaray/a50_dvl_sonar0
+      Unreliable: false
+      Value: true
+    - Alpha: 0.5
+      Buffer Length: 1
+      Class: rviz/Range
+      Color: 255; 255; 255
+      Enabled: true
+      Name: Range
+      Queue Size: 100
+      Topic: /mantaray/a50_dvl_sonar1
+      Unreliable: false
+      Value: true
+    - Alpha: 0.5
+      Buffer Length: 1
+      Class: rviz/Range
+      Color: 255; 255; 255
+      Enabled: true
+      Name: Range
+      Queue Size: 100
+      Topic: /mantaray/a50_dvl_sonar2
+      Unreliable: false
+      Value: true
+    - Alpha: 0.5
+      Buffer Length: 1
+      Class: rviz/Range
+      Color: 255; 255; 255
+      Enabled: true
+      Name: Range
+      Queue Size: 100
+      Topic: /mantaray/a50_dvl_sonar3
+      Unreliable: false
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Default Light: true
+    Fixed Frame: world
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz/MoveCamera
+  Value: true
+  Views:
+    Current:
+      Class: rviz/Orbit
+      Distance: 5.878663063049316
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.05999999865889549
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point:
+        X: 1.4358234405517578
+        Y: 0.6299447417259216
+        Z: 0.48192811012268066
+      Focal Shape Fixed Size: false
+      Focal Shape Size: 0.05000000074505806
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.009999999776482582
+      Pitch: 0.05539800226688385
+      Target Frame: mantaray/base_link
+      Value: Orbit (rviz)
+      Yaw: 4.796767234802246
+    Saved:
+      - Class: rviz/Orbit
+        Distance: 2.7850098609924316
+        Enable Stereo Rendering:
+          Stereo Eye Separation: 0.05999999865889549
+          Stereo Focal Distance: 1
+          Swap Stereo Eyes: false
+          Value: false
+        Focal Point:
+          X: 0
+          Y: 0
+          Z: 0
+        Focal Shape Fixed Size: false
+        Focal Shape Size: 0.05000000074505806
+        Invert Z Axis: false
+        Name: Orbit
+        Near Clip Distance: 0.009999999776482582
+        Pitch: 0.5103984475135803
+        Target Frame: mantaray/base_link
+        Value: Orbit (rviz)
+        Yaw: 1.2203978300094604
+      - Class: rviz/Orbit
+        Distance: 2.7850098609924316
+        Enable Stereo Rendering:
+          Stereo Eye Separation: 0.05999999865889549
+          Stereo Focal Distance: 1
+          Swap Stereo Eyes: false
+          Value: false
+        Focal Point:
+          X: 0
+          Y: 0
+          Z: 0
+        Focal Shape Fixed Size: false
+        Focal Shape Size: 0.05000000074505806
+        Invert Z Axis: false
+        Name: Orbit
+        Near Clip Distance: 0.009999999776482582
+        Pitch: 0.34539830684661865
+        Target Frame: mantaray/base_link
+        Value: Orbit (rviz)
+        Yaw: 4.80358362197876
+      - Class: rviz/Orbit
+        Distance: 5.878663063049316
+        Enable Stereo Rendering:
+          Stereo Eye Separation: 0.05999999865889549
+          Stereo Focal Distance: 1
+          Swap Stereo Eyes: false
+          Value: false
+        Focal Point:
+          X: 0
+          Y: 0
+          Z: 0
+        Focal Shape Fixed Size: false
+        Focal Shape Size: 0.05000000074505806
+        Invert Z Axis: false
+        Name: Orbit
+        Near Clip Distance: 0.009999999776482582
+        Pitch: 0.45039811730384827
+        Target Frame: mantaray/base_link
+        Value: Orbit (rviz)
+        Yaw: 4.65358304977417
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 1052
+  Hide Left Dock: false
+  Hide Right Dock: false
+  Image:
+    collapsed: false
+  QMainWindow State: 000000ff00000000fd000000010000000000000215000003c2fc0200000003fb000000100044006900730070006c006100790073010000003d000001dc000000c900fffffffb0000000a00560069006500770073010000021f000000e6000000a400fffffffb0000000a0049006d006100670065010000030b000000f40000001600ffffff00000565000003c200000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Views:
+    collapsed: false
+  Width: 1920
+  X: 3640
+  Y: 591
