@@ -1,13 +1,38 @@
 <launch>
-  <!-- This launch file is for mantaray to move autonomously -->
-  <node pkg="robot_localization" type="ekf_localization_node" name="ekf_se" clear_params="true" ns="mantaray">
-    <rosparam command="load" file="$(find mantaray_rpi)/params/ekf_params.yaml" />
-  </node>
+    <arg name="gui" default="true"/>
+	<arg name="paused" default="true"/>
+	<arg name="world_name" default="$(find dave_worlds)/worlds/dave_ocean_waves.world"/>
+	<arg name="namespace" default="mantaray"/>
+	<arg name="velocity_control" default="false"/>
+	<arg name="joy_id" default="0"/>
+	<arg name="debug" default="false"/>
+	<arg name="verbose" default="false"/>
+	<arg name="x" default="6"/>
+	<arg name="y" default="4"/>
+	<arg name="z" default="-93"/>
+	<arg name="roll" default="0"/>
+	<arg name="pitch" default="0"/>
+	<arg name="yaw" default="0"/>
 
-  <!-- <node name="clocker" pkg="mantaray_rpi" type="clock.py" output="screen" respawn="true"/> -->
-  <param name="simulation" type="bool" value="True"/>
-  <node name="imu_publisher" pkg="mantaray_rpi" type="imu_publisher" output="screen" respawn="true" ns="mantaray"/>
-  <node name="control" pkg="mantaray_rpi" type="main" output="screen" respawn="true" ns="mantaray"/> 
-  <!--<node name="dvl_publisher" pkg="mantaray_rpi" type="dvl_publisher.py" output="screen" respawn="true"/>-->
-  <!--<node name="thrusters" pkg="mantaray_rpi" type="control_pi_serial.py" output="screen" respawn="true"/>-->
+	<!-- Use Gazebo's empty_world.launch with dave_ocean_waves.world -->
+	<include file="$(find gazebo_ros)/launch/empty_world.launch">
+		<arg name="world_name" value="$(arg world_name)"/>
+		<arg name="paused" value="$(arg paused)"/>
+		<arg name="use_sim_time" value="true"/>
+		<arg name="gui" value="$(arg gui)"/>
+		<arg name="headless" value="false"/>
+		<arg name="debug" value="$(arg debug)"/>
+		<arg name="verbose" value="$(arg verbose)"/>
+	</include>
+
+    <include file="$(find mantaray_description)/launch/upload.launch"/>
+
+  	<node name="spawn_mantaray" pkg="gazebo_ros" type="spawn_model"
+  		respawn="false" output="screen"
+  		args="-urdf -x $(arg x) -y $(arg y) -z $(arg z) -R $(arg roll) -P $(arg pitch) -Y $(arg yaw) -model $(arg namespace) -param /$(arg namespace)/mantaray"/>
+
+  	<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen">
+  		<remap from="robot_description" to="/$(arg namespace)/mantaray"/>
+  	</node>
+
 </launch>
