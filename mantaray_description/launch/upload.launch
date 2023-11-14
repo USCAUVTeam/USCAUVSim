@@ -38,7 +38,7 @@
 
   <group ns="$(arg namespace)">
     <param name="robot_description"
-           command="$(find xacro)/xacro.py '$(find mantaray_description)/robots/$(arg mode).xacro' debug:=$(arg debug) namespace:=$(arg namespace)" />
+           command="$(find xacro)/xacro '$(find mantaray_description)/robots/$(arg mode).xacro' debug:=$(arg debug) namespace:=$(arg namespace)" />
     
     <!-- Run a python script to the send a service call to gazebo_ros to spawn a URDF robot -->
     <group if="$(arg use_geodetic)">
@@ -61,11 +61,11 @@
   </group>
 
   <!-- Publish state and tf for in relation to the world frame -->
-  <include file="$(find mantaray_description)/launch/message_to_tf.launch">
+  <!-- <include file="$(find mantaray_description)/launch/message_to_tf.launch">
     <arg name="namespace" value="$(arg namespace)"/>
     <arg name="world_frame" value="world"/>
     <arg name="child_frame_id" value="/$(arg namespace)/base_link"/>
-  </include>
+  </include> -->
 
   <!-- <include file="$(find mantaray_description)/launch/zedm.launch">
   </include> -->
